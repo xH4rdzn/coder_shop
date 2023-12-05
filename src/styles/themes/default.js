@@ -6,4 +6,5 @@ export const defaultTheme = {
   text: '#C4C4CC',
   title: '#E1E1E6',
   white: '#FFF',
+  ffPrincipal: "'Roboto', sans-serif",
 };

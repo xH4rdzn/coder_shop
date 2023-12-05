@@ -15,5 +15,10 @@ export const NavContainer = styled.nav`
 
   a {
     color: ${(props) => props.theme.title};
+
+    &:hover {
+      transition: color 0.5s;
+      color: ${(props) => props.theme.light};
+    }
   }
 `;

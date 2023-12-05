@@ -1,12 +1,7 @@
 import { HeaderContainer, NavContainer } from './styles';
 import logoHeader from '../../assets/LogoHeader.png';
-import {
-  At,
-  GameController,
-  House,
-  ShoppingCart,
-  Usb,
-} from '@phosphor-icons/react';
+import { At, GameController, House, Usb } from '@phosphor-icons/react';
+import { CartWidget } from '../CartWidget';
 
 export function NavBar() {
   return (
@@ -29,9 +24,7 @@ export function NavBar() {
           <At size={32} />
         </a>
 
-        <a href="/">
-          <ShoppingCart size={32} />
-        </a>
+        <CartWidget />
       </NavContainer>
     </HeaderContainer>
   );
