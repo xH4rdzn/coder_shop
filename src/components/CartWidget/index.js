@@ -1,11 +1,11 @@
 import { ShoppingCart } from '@phosphor-icons/react';
 import { CartWidgetContainer } from './styles';
 
-export function CartWidget() {
+export function CartWidget({ count }) {
   return (
     <CartWidgetContainer>
       <ShoppingCart size={32} />
-      <span>4</span>
+      <span>{count}</span>
     </CartWidgetContainer>
   );
 }
