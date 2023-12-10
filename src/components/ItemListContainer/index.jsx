@@ -1,3 +1,4 @@
+import { Item } from '../Item';
 import { ItemCount } from '../ItemCount';
 
 export function ItemListContainer() {
@@ -5,6 +6,8 @@ export function ItemListContainer() {
     <>
       <h1>Aqui vai o conteúdo do site.</h1>
       <ItemCount stock={10} initial={1} />
+      <Item />
+      <Item />
     </>
   );
 }
