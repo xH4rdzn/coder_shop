@@ -17,7 +17,9 @@ export function ItemCount({ stock, initial }) {
     }
   }
 
-  function handleAddToCart(count) {}
+  function handleAddToCart(count) {
+    console.log(count);
+  }
 
   return (
     <>

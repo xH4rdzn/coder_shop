@@ -19,8 +19,10 @@ export const ItemCountContainer = styled.div`
 
   span {
     font-family: ${(props) => props.theme.ffPrincipal};
+    color: ${(props) => props.theme.title};
     font-size: 1.5rem;
     font-weight: 500;
+    border: 0;
   }
 `;
 

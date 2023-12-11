@@ -24,7 +24,7 @@ export function NavBar() {
           <At size={32} />
         </a>
 
-        <CartWidget />
+        <CartWidget count={5} />
       </NavContainer>
     </HeaderContainer>
   );
