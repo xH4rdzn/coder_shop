@@ -1,13 +1,15 @@
-import { ItemContainer } from "./styles";
+import { ItemContainer } from './styles';
 
-export function Item(){
-    return(
-        <>
-          <ItemContainer>
-            <span>PC</span>
-            <img src="https://upload.wikimedia.org/wikipedia/pt/0/06/TW3_Wild_Hunt.png" alt="The Witcher 3" />
-            <button>Ver Detalhes</button>
-          </ItemContainer>
-        </>
-    )
+export function Item({ pictureUrl, tag, title, price }) {
+  return (
+    <>
+      <ItemContainer>
+        <span>{tag}</span>
+        <img src={pictureUrl} alt={title} />
+        <h3>{title}</h3>
+        <h4>{price}</h4>
+        <button>Ver Detalhes</button>
+      </ItemContainer>
+    </>
+  );
 }
